@@ -1,12 +1,13 @@
-
 from flask import Flask , request , url_for , render_template 
-
 
 app=Flask(__name__,template_folder='templates')
 
 
-
 @app.route('/')
+def home():
+    return render_template('ff.html')
+
+@app.route('/first')
 def first():
     return render_template('first.html')
 
