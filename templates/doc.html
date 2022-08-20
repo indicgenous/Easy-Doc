@@ -1,0 +1,74 @@
+{% extends "layout.html "%}
+{% block body %}
+
+<button class="card-btn">Emergency Doctors near {{ loc }}</button>
+    </nav>
+    <!-- content goes here -->
+    
+    <div class="block"style="display: grid;">
+      <div class="hello"></div>
+    <div class="grid" >
+      
+      <div class="grid-item">
+        
+        <div class="card">
+          <img class="card-img" src="static/img/doc1.jpg" alt="img" />
+          <div class="card-content">
+            <h1 class="card-header">Dr. Sanad Singh</h1>
+            <p class="card-text">
+              <i class="fa fa-medkit"> </i> Gynaecologist
+              <br><i class="fa fa-hospital-o"></i> - Good Samaritan Hospital,{{loc}}
+            </p>
+            <button class="card-btn"><a href="/des">Contact</a> <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="/static/img/doc2.jpg"
+            alt="Grand Canyon"
+          />
+          <div class="card-content">
+            <h1 class="card-header">Dr. Sanandan Issac</h1>
+            <p class="card-text">
+              <i class="fa fa-medkit"> </i> Cardiologist
+              <br><i class="fa fa-hospital-o"></i> - Apex Hospital,{{loc}}
+            </p>
+            <button class="card-btn">Contact <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="static/img/doc3.jpg" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Dr. Ahmed Nassar</h1>
+            <p class="card-text">
+              <i class="fa fa-medkit"> </i> Gynaecologist
+              <br><i class="fa fa-hospital-o"></i> - Lenox Hill Hospital,{{loc}}
+            </p>
+            <button class="card-btn">Contact <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="static/img/doc3.jpg" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Dr.Sanad kumar</h1>
+            <p class="card-text">
+              <i class="fa fa-medkit"> </i> Gynaecologist
+              <br><i class="fa fa-hospital-o"></i> - Fortis Hospital,{{loc}}
+            </p>
+            <button class="card-btn">Contact <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+ </div>
+ {% endblock %}
+ 
+  
