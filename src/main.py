@@ -28,5 +28,9 @@ def des():
 def med():
     return render_template("med.html")
 
+@app.route('/contact')
+def con():
+    return render_template('contact.html')
+
 if __name__=='__main__':
     app.run(debug=True)
